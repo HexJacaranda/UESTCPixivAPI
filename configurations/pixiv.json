@@ -1,0 +1,13 @@
+{
+  "proxy_ip": "127.0.0.1",
+  "proxy_port": 4780,
+  "accounts": [
+    {
+      "username": "1176963837@qq.com",
+      "password": "ky2000328",
+      "token": "ytVhclkB7z927bofpyWzDHECjo3XD2d3yGXCBfb2Gcc",
+      "refresh_token": "BmhEDIIoA3vIRGdzrnw6e4osgg1HtFFADWuIsR2thhs",
+      "is_premium": false
+    }
+  ]
+}
