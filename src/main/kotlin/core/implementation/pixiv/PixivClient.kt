@@ -91,8 +91,8 @@ class PixivClient(var authorization: PixivAuthorization) {
 
             val config = RequestConfig
                     .custom()
+                    .setProxy(PixivConstant.proxy)
                     .build()
-
 
             logger.info { "Requesting for authorization." }
             return try {

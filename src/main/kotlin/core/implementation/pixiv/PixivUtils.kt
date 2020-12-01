@@ -32,7 +32,10 @@ fun<R> request(
     RequestBase["Authorization"] = "Bearer ${Authorization.token}"
     Header.forEach { RequestBase[it.first] = it.second }
     RequestBase.uri = URIBuilder(RequestBase.uri).addParameters(Params.toMutableList()).build()
-    val config = RequestConfig.custom().build()
+    val config = RequestConfig
+            .custom()
+            .setProxy(PixivConstant.proxy)
+            .build()
     return HttpClients.custom().setDefaultRequestConfig(config).build().use {
         it.execute(RequestBase).use(Fn)
     }
